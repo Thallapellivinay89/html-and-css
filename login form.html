@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .con{
+            width:100%;
+            height: 100vh;
+            background: linear-gradient(#00ff40,#81aa8b,rgb(255, 0, 247));
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login{
+            border:2px solid gray;
+            width:35%;
+            padding:30px 10px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap:10px;
+        }
+        h1{
+            color:crimson
+        }
+        .userid,.pwd{
+           width:80%;
+    re       height:40px;
+           position:relative;
+
+        }
+        input{
+            width:100%;
+            height:100%;
+            background: transparent;
+            border:none;
+            border-bottom: 3px solid gray;
+        }
+        ::placeholder{
+            color:white;
+            font-size: 20px;
+        }
+        i{
+            position: absolute;
+            top: 5px;
+            right:5px;
+            font-size: 20px;
+            color:crimson;
+        }
+        button{
+            width: 200px;
+            height:50px;
+            border-radius: 5px;
+            color:green;
+            background-color: black;
+        }
+        p{
+            align-self: flex-end;
+            color:blue;
+        }
+        p a{
+            color:red
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="con">
+        <div class="login">
+                    <h1>login form</h1>
+    <div class="userid">
+        <input type="text" placeholder="enter the name">
+        <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="pwd">
+        <input type="password"placeholder="enter password">
+        <i class="fa-solid fa-eye"></i>
+    </div>
+     <button>Login</button>
+     <p> create a to registrer <a href="www.register.html">click here</p>
+    </div>    
+</body>
+</html>
