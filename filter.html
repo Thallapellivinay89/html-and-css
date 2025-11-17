@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data=[
+  {
+      name:'john',
+      age:25,
+      branch:'cse'
+  },
+  {
+      name:'jessy',
+      age:19,
+      branch:'cse'
+  },
+  {
+  name:'jack',
+  age:30,
+  branch:'civil'
+},
+{
+  name:'jenny',
+  age:23,
+  branch:"cse",
+}
+];
+//let sorted=data.sort((a,b)=>{
+    //return a.age-b.age//
+//})
+//console.log(sorted)
+let branch=data.sort((a,b)=>{
+    return a.branch+b.branch
+})
+console.log(branch)
+let somearray=data.every((value,ind,arr)=>{
+    return value.age>30
+})
+console.log(somearray)
+    </script>
+</body>
+</html>
